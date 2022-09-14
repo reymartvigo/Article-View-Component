@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color:  hsl(210, 46%, 95%);
+}
+
+main{
+   width: 850px;
+   display: flex;
+   justify-content: center;
+   margin: 160px auto;
+   height: 320px;
+   background: #fff;
+   border-radius: 10px;
+}
+.image , .image img{
+    width: 105%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content{
+    padding:40px 50px;
+}
+
+.content h1{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: hsl(217, 19%, 35%)
+}
+
+.content p{
+   color:hsl(212, 23%, 69%);
+   font-weight: 500;
+}
+
+
+.profile{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between
+}
+h2{
+    color: hsl(217, 19%, 35%)
+}
+
+#pic{
+    width: 10%;
+    clip-path:circle(50%);
+}
+
+.name {
+    margin-left: -160px;
+}
+
+button{
+    border:none;
+    padding: 10px 15px;
+    clip-path: circle(50%);
+    cursor: pointer;
+}
+.closed{
+    display: none;
+    height: 45px;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 145px;
+    background: hsl(217, 19%, 35%);
+}
+.closed img{
+    width: 15px;
+}
+
+.share{
+    border-radius: 10px;
+    width: 300px;
+    padding: 13px ;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  hsl(217, 19%, 35%);
+    position: absolute;
+    margin-left: 710px;
+    margin-top: 180px;
+    display: none;
+}
+
+.share a {
+    cursor: pointer;
+}
+.share p {
+    letter-spacing : 3px;
+    color: hsl(212, 23%, 69%);
+}
+
+.box{
+    background: hsl(217, 19%, 35%);
+    width: 10px;
+    position: absolute;
+    padding: 100px;
+    transform: rotate(40deg) scale(0.4) skew(-2deg) translate(2px,0px);
+    -webkit-transform: rotate(40deg) scale(0.1) skew(-2deg) translate(2px,0px);
+    -moz-transform: rotate(40deg) scale(0.1) skew(-2deg) translate(2px,0px);
+    margin-left: 44rem;
+    margin-top: 129px;
+    display: none;
+}
+
+@media screen and (max-width: 375px){
+    main{
+        width: 350px;
+        display: block;
+        margin: 40px auto;
+        height: 85%;
+     } 
+    .image , .image img{
+        border-radius: unset;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 70%;
+    }
+ 
+    .content{
+        padding:20px 20px;
+    }
+
+    .content h1{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .content p{
+        color:hsl(217, 19%, 35%);
+        font-weight: 400;
+    }
+
+   
+    .profile{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        position:relative;
+        margin-bottom: -10px;
+    }
+
+    #pic{
+        width: 50px;
+    }
+
+    .name {
+        margin-left: -10px;
+    }
+
+    button{
+        outline: none;
+        clip-path: circle(45%);
+    }
+    .closed{
+        height: 45px;
+        position: absolute;
+        margin-top:-4px;
+        margin-left:265px;
+        background: hsl(214, 17%, 51%)
+    }
+
+    .share{
+        justify-content: flex-start;
+        border-radius: unset;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 94%;
+        padding: 20px ;
+        padding-top: 25px;
+        gap: 15px;
+        margin-left: unset;
+        margin-top: -65px;
+
+    }
+    .share p {
+        margin-left: 30px;
+        font-size: 15px;
+        letter-spacing : 3px;
+        color: hsl(212, 23%, 69%);
+    }
+
+    
+    .box{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1048px){
+    main{
+        max-width: 380px;
+        display: block;
+        margin: 80px auto;
+        height: 85%;
+     } 
+    .image , .image img{
+        border-radius: unset;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 70%;
+    }
+ 
+    .content{
+        padding:20px 20px;
+    }
+
+    .content h1{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .content p{
+        color:hsl(217, 19%, 35%);
+        font-weight: 400;
+    }
+
+   
+    .profile{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        position:relative;
+        margin-bottom: -10px;
+    }
+
+    #pic{
+        width: 50px;
+    }
+
+    .name {
+        margin-left: -10px;
+    }
+
+    button{
+        clip-path: circle(45%);
+    }
+    .closed{
+        height: 45px;
+        position: absolute;
+        margin-top:-4px;
+        margin-left:275px;
+        background: hsl(214, 17%, 51%)
+    }
+
+    .share{
+        justify-content: flex-start;
+        border-radius: unset;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 380px;
+        padding: 20px ;
+        padding-top: 25px;
+        gap: 15px;
+        margin-left: unset;
+        margin-top: -65px;
+
+    }
+    .share p {
+        margin-left: 30px;
+        font-size: 15px;
+        letter-spacing : 3px;
+        color: hsl(212, 23%, 69%);
+    }
+
+    
+    .box{
+        display: none !important;
+    }
+
+}
